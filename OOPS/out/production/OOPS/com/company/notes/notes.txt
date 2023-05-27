@@ -1,0 +1,11 @@
+a class is a template of an object and an object is an instance of a class
+when you're creating an object of a class, you're creating an instance of a class(physical stuff of that class)
+ex: there si ule for cars : engine, body, breaks etc . to make it a reality or a ohysical stuf, u need to follow
+this class template and create an instance of it i.e an object
+Class -> logical construct
+Object -> physical reality /// occupies space in memory
+types of polymorphism - 1) compile time/ static polymorphism - achieved via method overloading
+(method overloading) - when a class has multiple methods with a same name but the number and the type and
+the order of the parameters and the return type can be different
+2) runtime polymorphism/ dynamic poltmorphism - achieved by method overriding
+(method overriding) - same function in parenr class and child calss also , the child class one will be given priority

@@ -1,0 +1,26 @@
+                                                BigO Notation
+                                         "How code slows as data grows"
+
+        O(1) = constant time
+             * random access of an element in an array
+             * insertimg at the beginning of the LinkedList
+
+        o(log n) = logarithmic time
+                * binary search
+
+        O(n) =  linear time
+               * looping through elements in tan array
+               * searching through a linkedlist
+
+        O(n log n) = quasilinear time
+                    * quicksort
+                    * merge sort
+                    * heap sort
+
+        O(n^2) = quadratic time
+               * insertion sort
+               * slection sort
+               * bubble sort
+
+        O(n!) = factorial time
+              * travelling salesman problem

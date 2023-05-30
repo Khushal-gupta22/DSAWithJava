@@ -3,6 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class MazeTraversalMin {
+    // min cost path in maze traversal
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();

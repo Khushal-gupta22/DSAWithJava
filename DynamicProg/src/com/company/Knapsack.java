@@ -26,7 +26,10 @@ public class Knapsack {
                 if ( j >= wts[i-1] ) {
                     int rCap = j - wts[i-1];
                     //when i doesn't bat
-                    dp[i][j] = Math.max(dp[i - 1][rCap] + vals[i - 1], dp[i - 1][j]);
+                    if (dp[i-1][rCap] + vals[i-1] > dp[i-1][j]) {
+                        dp[i][j] = dp[i-1][rCap] + vals[i-1];
+                    }
+                   // or  dp[i][j] = Math.max(dp[i - 1][rCap] + vals[i - 1], dp[i - 1][j]);
                 } else {
                     dp[i][j] = dp[i-1][j];
                 }

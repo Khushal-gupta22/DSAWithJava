@@ -3,6 +3,9 @@ package com.company;
 import java.util.Scanner;
 
 public class Knapsack {
+
+    // type-1 - there are total 5 types in type1 problems - targetsumsubset, coin chnage permut and comb, unbounded
+    // and 0/1 knapsack
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n= scn.nextInt();
@@ -17,6 +20,8 @@ public class Knapsack {
             wts[i] = scn.nextInt();
         }
         int target = scn.nextInt();
+
+        //logic for 0-1 knapsack
 
         int[][] dp = new int[n+1][target+1];
 
@@ -36,5 +41,26 @@ public class Knapsack {
             }
         }
         System.out.println(dp[n][target]);
+
+        // logic for unbounded knapsack
+        int[] dp2 = new int[target+1];
+        dp2[0] = 0;
+        for( int bagCap = 1; bagCap <=target; bagCap++) {
+            int max = Integer.MIN_VALUE;
+            for (int i = 1; i < vals.length; i++) {
+
+                if (bagCap >= wts[i] ) {
+                    int remBagCap = bagCap -wts[i];
+                    int remBagVal = dp2[remBagCap];
+                    int totalBagVal = remBagVal + vals[i];
+
+                    if( totalBagVal > max) {
+                        max = totalBagVal;
+                    }
+                }
+            }
+            dp2[bagCap] = max;
+        }
+        System.out.println(dp2[target]);
     }
 }

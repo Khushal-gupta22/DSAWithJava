@@ -6,6 +6,8 @@ public class TargetSumSubset {
     // you are given an array . You have to find if any subst can generate the required sum or not
     // diff bw subsets and subarrays - subsets are non-continuous
     // sub arrays are continuous
+
+    //type-1
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();

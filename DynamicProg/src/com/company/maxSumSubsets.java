@@ -28,7 +28,7 @@ public class maxSumSubsets {
         // constant space complexity
         int inc = arr[0];
         int exc = 0;
-        for (int i = 1; i <= arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) {
             int newInc = exc + arr[i];
             int newExc = Math.max(inc, exc) + arr[i];
             exc = newExc;

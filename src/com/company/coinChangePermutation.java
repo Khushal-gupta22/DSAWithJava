@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class coinChangePermutation {
     // you have to now tell all the possible pairs , where order does matter ir xy and yx are different and will be count as 2
+
+    // type-1
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();

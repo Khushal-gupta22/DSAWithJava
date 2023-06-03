@@ -6,6 +6,8 @@ public class coinChangeCombination {
     // given an array and denomination of coins , you have infinite no of coins of different denominations
     // you have to tell the no of combinations possible for a given sum
     // Question - in how many combinations can you pay the person
+
+    // type-1
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
